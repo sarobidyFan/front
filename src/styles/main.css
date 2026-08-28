@@ -660,3 +660,161 @@ td button:hover {
     background: #eef2f8;
     color: var(--blue-900);
 }
+
+@media (max-width: 900px) {
+    .dashboard-grid-admin,
+    .exam-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sub-navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 18px 0;
+    }
+
+    .sub-navbar-links {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .sub-navbar-link {
+        min-height: 48px;
+    }
+}
+
+@media (max-width: 680px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 18px;
+    }
+
+    .navbar-user {
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: min(100% - 28px, 1180px);
+        padding-top: 28px;
+    }
+
+    .dashboard-page {
+        padding-top: 42px;
+    }
+
+    .dashboard-grid,
+    .exam-dates {
+        grid-template-columns: 1fr;
+    }
+
+    .question-card legend {
+        flex-wrap: wrap;
+    }
+
+    .question-card legend small {
+        margin-left: 42px;
+    }
+
+    .question-choice-row {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.login-page {
+    width: min(430px, calc(100% - 32px));
+    min-height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.login-header {
+    margin-bottom: 18px;
+}
+
+.login-header h1 {
+    margin-bottom: 8px;
+}
+
+.login-description {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.login-form {
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+}
+
+.login-form input {
+    max-width: none;
+}
+
+.form-submit-button {
+    display: block;
+    margin: 12px 0 0 !important;
+}
+
+.navbar {
+    gap: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.navbar-user {
+    margin-left: auto;
+}
+
+.sub-navbar {
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sub-navbar-title {
+    margin-right: 2px;
+    font-size: 0.78rem;
+}
+
+.sub-navbar-links {
+    gap: 0;
+}
+
+.sub-navbar-link {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (max-width: 720px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .navbar-user {
+        width: 100%;
+    }
+
+    .sub-navbar {
+        overflow-x: auto;
+        padding-left: 12px;
+    }
+
+    .sub-navbar-title {
+        position: sticky;
+        left: 0;
+    }
+}

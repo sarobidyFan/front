@@ -24,13 +24,8 @@ const Results = () => {
 
             <main>
                 <h1>Mes résultats</h1>
-
-                {errorMessage && (
-                    <p className="error-message">{errorMessage}</p>
-                )}
-
+                {errorMessage && (<p className="error-message">{errorMessage}</p>)}
                 <p>Moyenne : {average}</p>
-
                 <table>
                     <thead>
                         <tr>

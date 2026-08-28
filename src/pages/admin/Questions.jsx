@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-    createQuestion,
-    deleteQuestion,
-    getQuestions,
-    getExams,
-    updateQuestion
-} from "../../api/examApi";
+import {createQuestion, deleteQuestion, getQuestions, getExams, updateQuestion} from "../../api/examApi";
 import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 

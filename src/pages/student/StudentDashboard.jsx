@@ -16,7 +16,6 @@ const StudentDashboard = () => (
 
             <section className="dashboard-grid">
                 <Link className="dashboard-card" to="/student/exams">
-                    <span className="dashboard-card-icon">EX</span>
                     <div>
                         <h2>Examens disponibles</h2>
                         <p>Consulter les examens ouverts et passer une épreuve.</p>
@@ -24,7 +23,6 @@ const StudentDashboard = () => (
                 </Link>
 
                 <Link className="dashboard-card" to="/student/results">
-                    <span className="dashboard-card-icon">R</span>
                     <div>
                         <h2>Mes résultats</h2>
                         <p>Voir vos notes, votre moyenne et votre historique.</p>

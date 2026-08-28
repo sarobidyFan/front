@@ -16,7 +16,6 @@ const AdminDashboard = () => (
 
             <section className="dashboard-grid dashboard-grid-admin">
                 <Link className="dashboard-card" to="/admin/students">
-                    <span className="dashboard-card-icon">ET</span>
                     <div>
                         <h2>Étudiants</h2>
                         <p>Créer, modifier et activer ou désactiver les comptes étudiants.</p>
@@ -24,7 +23,6 @@ const AdminDashboard = () => (
                 </Link>
 
                 <Link className="dashboard-card" to="/admin/courses">
-                    <span className="dashboard-card-icon">CO</span>
                     <div>
                         <h2>Cours</h2>
                         <p>Gérer les codes, noms et descriptions des cours.</p>
@@ -32,10 +30,9 @@ const AdminDashboard = () => (
                 </Link>
 
                 <Link className="dashboard-card" to="/admin/exams">
-                    <span className="dashboard-card-icon">EX</span>
                     <div>
                         <h2>Examens</h2>
-                        <p>Créer les examens,avec leurs dates et leurs questionnaires.</p>
+                        <p>Créer les examens, leurs dates et leurs questionnaires.</p>
                     </div>
                 </Link>
             </section>

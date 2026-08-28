@@ -202,14 +202,15 @@ const Exams = () => {
                                     >
                                         Supprimer
                                     </button>
-
-
+                                    <br />
+                                    Voir : 
+                                    <br />
                                     <Link to={`/admin/exams/${exam.id}/questions`}>
                                         Questions
                                     </Link>
 
                                     <Link to={`/admin/exams/${exam.id}/results`}>
-                                        Résultats
+                                        / Résultats
                                     </Link>
                                 </td>
                             </tr>

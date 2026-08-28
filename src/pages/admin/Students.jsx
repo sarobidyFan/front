@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-    activateStudent,
-    createStudent,
-    deactivateStudent,
-    getStudents,
-    updateStudent
-} from "../../api/studentApi";
+import {activateStudent, createStudent, deactivateStudent, getStudents, updateStudent} from "../../api/studentApi";
 import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 

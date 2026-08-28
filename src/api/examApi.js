@@ -47,10 +47,13 @@ export const deleteQuestion = (questionId) =>
 
 export const submitExam = (examId, answers) => {
     const formattedAnswers = Array.isArray(answers)
-        ? answers
+        ? answers.map((answer) => ({
+            question_id: Number(answer.question_id ?? answer.questionId),
+            choice_id: Number(answer.choice_id ?? answer.choiceId)
+        }))
         : Object.entries(answers).map(([questionId, choiceId]) => ({
-            questionId: Number(questionId),
-            choiceId: Number(choiceId)
+            question_id: Number(questionId),
+            choice_id: Number(choiceId)
         }));
 
     return apiRequest(`/my/exams/${examId}/submit`, {
